@@ -1,4 +1,3 @@
-require("dotenv").config();
 import "./Nav.css";
 import React, { useEffect } from "react";
 import { useGlobalContext } from "../../context";

@@ -1,4 +1,3 @@
-require("dotenv").config();
 import "./Home.css";
 import React, { useEffect, useState } from "react";
 import { useGlobalContext } from "../../context";
