@@ -1,10 +1,9 @@
 import "./Nav.css";
-import React, { useEffect } from "react";
+
 import { useGlobalContext } from "../../context";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Nav = () => {
 	const [userData, setUserData] = useGlobalContext();
-
 	// Logout button Funcationality...
 	const logout = () => {
 		setUserData({
