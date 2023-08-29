@@ -7,7 +7,7 @@ const Nav = () => {
 	const [userData, setUserData] = useGlobalContext();
 	useEffect(() => {
 		if (!userData.token) navigate("/login");
-	}, [userData]);
+	}, [userData, navigate]);
 
 	// Logout button Funcationality...
 	const logout = () => {

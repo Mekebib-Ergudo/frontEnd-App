@@ -10,7 +10,10 @@ const Answer = () => {
 	const [addAnswer, setAddAnswer] = useState("");
 	const [getAnswer, setGetAnswer] = useState([]);
 	const [searchParams] = useSearchParams();
-	const id = searchParams.get("id");
+	const question_Id = searchParams.get("id");
+
+	// Change to integer cuz we get string id from url
+	const id = parseInt(question_Id);
 
 	// FetchQusetion from user and question tables
 	const fetchQuestions = async () => {
@@ -29,7 +32,7 @@ const Answer = () => {
 	}, []);
 
 	//  Filtering single qusetion and question_description
-	const singleQuestion = questions.filter((item) => item.question_id == id);
+	const singleQuestion = questions.filter((item) => item.question_id === id);
 	// console.log(singleQuestion);
 
 	//  Submit an Answer...
@@ -40,6 +43,7 @@ const Answer = () => {
 				`${process.env.REACT_APP_base_url}/api/users/answer`,
 				{ answer: addAnswer, question_id: id, user_id: userData.user.id }
 			);
+			console.log(response);
 		} catch (error) {
 			console.error(error);
 		}
@@ -70,7 +74,7 @@ const Answer = () => {
 
 	// Filter Single Answer....
 	// using webworker..
-	const singleAnswer = getAnswer.filter((item) => item.question_id == id);
+	const singleAnswer = getAnswer.filter((item) => item.question_id === id);
 	// console.log(singleAnswer);
 	// console.log(getAnswer);
 	return (
@@ -97,7 +101,6 @@ const Answer = () => {
 									<img
 										className="img"
 										src="https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small/beautiful-latin-woman-avatar-character-icon-free-vector.jpg"
-										alt="image"
 									/>
 									<h3>{item.first_name} </h3>
 								</div>

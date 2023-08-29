@@ -10,7 +10,7 @@ const Home = () => {
 	const [userData] = useGlobalContext();
 	useEffect(() => {
 		if (!userData.token) navigate("/login");
-	}, [userData]);
+	}, [userData, navigate]);
 
 	const fetchQuestions = async () => {
 		try {
@@ -50,7 +50,6 @@ const Home = () => {
 									<img
 										className="img"
 										src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrIfBonwutkrU7BETKihJm8Ld5EBUUgrsIOw&usqp=CAU"
-										alt="image"
 									/>
 									<p>{item.first_name}</p>
 								</div>

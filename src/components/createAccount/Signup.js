@@ -50,6 +50,7 @@ const Signup = () => {
 					<form onSubmit={handleSubmit}>
 						<div className="login__input signup ">
 							<input
+								style={{ borderColor: color }}
 								value={info.email}
 								onChange={handleChange}
 								type="text"
