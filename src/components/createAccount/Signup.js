@@ -17,7 +17,7 @@ const Signup = () => {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		if (!info.email || info.firstName || info.lastName || info.userName) {
+		if (!(info.email || info.firstName || info.lastName || info.userName)) {
 			setColor("red");
 			return;
 		}
@@ -26,7 +26,8 @@ const Signup = () => {
 				`${process.env.REACT_APP_base_url}/api/users`,
 				info
 			);
-			if ((response.statusText = "OK")) navigate("/login");
+			navigate("/login");
+			console.log(response);
 		} catch (error) {
 			console.error(error);
 		}
@@ -60,6 +61,7 @@ const Signup = () => {
 							/>
 							<div className="name">
 								<input
+									style={{ borderColor: color }}
 									value={info.firstName}
 									onChange={handleChange}
 									type="text"
@@ -67,6 +69,7 @@ const Signup = () => {
 									placeholder="First Name"
 								/>
 								<input
+									style={{ borderColor: color }}
 									value={info.lastName}
 									onChange={handleChange}
 									type="text"
@@ -75,6 +78,7 @@ const Signup = () => {
 								/>
 							</div>
 							<input
+								style={{ borderColor: color }}
 								value={info.userName}
 								onChange={handleChange}
 								type="text"
@@ -83,6 +87,7 @@ const Signup = () => {
 							/>
 
 							<input
+								style={{ borderColor: color }}
 								value={info.password}
 								onChange={handleChange}
 								type="password"
@@ -103,9 +108,7 @@ const Signup = () => {
 									terms of service.
 								</Link>
 							</p>
-							<button type="button" className="login__submit">
-								Agree and Join
-							</button>
+							<button className="login__submit">Agree and Join</button>
 							<p className="have__account">
 								<Link to="/login">Already have an account?</Link>
 							</p>
