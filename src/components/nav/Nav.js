@@ -3,11 +3,7 @@ import React, { useEffect } from "react";
 import { useGlobalContext } from "../../context";
 import { Link, useNavigate } from "react-router-dom";
 const Nav = () => {
-	const navigate = useNavigate();
 	const [userData, setUserData] = useGlobalContext();
-	useEffect(() => {
-		if (!userData.token) navigate("/login");
-	}, [userData, navigate]);
 
 	// Logout button Funcationality...
 	const logout = () => {

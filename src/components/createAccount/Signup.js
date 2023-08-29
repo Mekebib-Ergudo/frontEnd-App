@@ -42,7 +42,7 @@ const Signup = () => {
 				<div className="login__center">
 					<div className="login__title">
 						<h3>Join the network</h3>
-						Already have an account?{" "}
+						Already have an account?
 						<span>
 							<Link to="/login">Sign in</Link>
 						</span>
