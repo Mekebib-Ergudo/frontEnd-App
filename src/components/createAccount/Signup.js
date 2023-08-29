@@ -96,10 +96,9 @@ const Signup = () => {
 									to="https://www.evangadi.com/legal/privacy/"
 									target="blank"
 								>
-									{" "}
 									to the privacy policy
-								</Link>{" "}
-								and{" "}
+								</Link>
+								and
 								<Link to="https://www.evangadi.com/legal/terms/" target="blank">
 									terms of service.
 								</Link>
