@@ -1,0 +1,66 @@
+.Question {
+	width: 100%;
+	margin-top: 10rem;
+	text-align: center !important;
+}
+.question_instr h4 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.question_instr li {
+	color: gray;
+}
+.question__form {
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	margin-left: 14rem;
+	margin-right: 14rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.1);
+	background-color: white;
+	border-color: #ccc;
+}
+
+.question__title {
+	margin-bottom: 1.5rem;
+}
+.question__title h3 {
+	margin-bottom: 1rem;
+	color: gray;
+}
+.question__link {
+	font-size: 0.9rem;
+}
+.input-container {
+	align-items: center !important;
+	display: flex;
+	flex-direction: column;
+}
+.inpt {
+	width: 60rem;
+	border-color: #ccc;
+	border-radius: 0.6rem;
+}
+.description {
+	padding-bottom: 7rem;
+}
+.submit {
+	cursor: pointer;
+	text-align: center;
+	font-weight: 800;
+	background-color: rgb(170, 109, 214);
+	border-radius: 0.4rem;
+	border-color: transparent;
+	width: 300px;
+	color: #fff;
+	line-height: 40px;
+	font-size: 1.2rem;
+	transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.submit :hover {
+	background-color: #2980b9;
+	transform: scale(1.05);
+}

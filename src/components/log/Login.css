@@ -1,0 +1,114 @@
+/* Login Form */
+.login__wrapper {
+	width: 100%;
+	margin-top: 15rem;
+}
+.login__container {
+	margin: 0 auto;
+	width: 80vw;
+	display: flex;
+	justify-content: center;
+}
+.login__input {
+	display: flex;
+	flex-direction: column;
+}
+.login__about-Evan {
+	max-width: 50%;
+	align-items: center;
+	text-align: center;
+}
+.login__center {
+	margin-right: 1rem;
+	padding: 3rem 4rem 6rem 4rem;
+	border: 1px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+	/* height: 17rem; */
+}
+.login__title {
+	color: grey;
+	text-align: center;
+	align-items: center;
+	margin-bottom: 2.5rem;
+}
+input {
+	padding: 0.8rem;
+	margin-bottom: 1rem;
+	border-radius: 0.3rem;
+	width: 30rem;
+	height: 1.5rem;
+	border: 1px solid #ccc;
+}
+
+a {
+	text-decoration: none;
+	color: coral;
+}
+.login__submit {
+	background-color: rgb(170, 109, 214);
+	color: white;
+	padding-top: 0.7rem;
+	padding-bottom: 0.7rem;
+	text-align: center;
+	font-size: 1.2rem;
+	border: 1px solid #ccc;
+	border-radius: 0.3rem;
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+.login__submit :hover {
+	background: burlywood !important;
+}
+.link {
+	text-align: end;
+	margin-bottom: 0.8rem;
+}
+/* login__about-Evan */
+.about {
+	color: coral !important;
+	margin-bottom: 0.7rem;
+}
+.login__about-Evan h1 {
+	font-size: 3rem;
+	margin-bottom: 1.2rem;
+}
+.login__about-Evan p {
+	word-spacing: 0.1rem;
+	line-height: 1.8rem;
+	color: grey;
+	font-weight: 500;
+}
+.login__btn {
+	color: white;
+	margin-top: 2rem;
+	padding: 0.6rem;
+	width: 13rem;
+	background-color: coral;
+	border: 1px #ccc;
+	border-radius: 0.2rem;
+	text-align: center;
+}
+
+/* SignUp Css */
+
+.name {
+	display: flex;
+	gap: 0.3rem;
+}
+
+.name input {
+	width: 14rem;
+}
+.login__input .signup {
+	height: 20rem !important;
+}
+.have__account a {
+	margin-top: 2rem !important;
+}
+.signup__privacy {
+	font-size: 0.9rem !important;
+	text-align: center !important;
+	margin-bottom: 0.3rem !important;
+}

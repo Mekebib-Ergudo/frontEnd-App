@@ -1,0 +1,76 @@
+.answer {
+	margin-top: 10rem;
+	width: 100%;
+}
+.answer__container {
+	margin-left: 16rem;
+	margin-right: 16rem;
+}
+.answer__question {
+	border-bottom: 1px solid #ccc;
+	line-height: 1.8rem;
+	color: gray;
+}
+.answer__question h5 {
+	color: gray;
+}
+.answer__comm {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	font-size: 1.3rem;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.answer__nameAndAns {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+.answer__img-user {
+	text-align: center;
+}
+.answer__nameAndAns p {
+	text-align: center;
+	/* /* padding-top: 1.6rem; */
+	margin-left: 2.5rem;
+}
+.answer__input__title {
+	text-align: center;
+	background: white;
+	padding: 2rem;
+	box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.1);
+	border-color: #ccc;
+	border-radius: 0.9rem;
+	margin-left: 4rem;
+}
+.answer__input__title p {
+	line-height: 3rem;
+}
+
+.answer__inp {
+	width: 50rem;
+	padding-bottom: 7rem;
+	border-radius: 0.5rem;
+}
+.answer__submit {
+	cursor: pointer;
+	text-align: center;
+	font-weight: 800;
+	background-color: rgb(170, 109, 214);
+	border-radius: 0.4rem;
+	border-color: transparent;
+	width: 300px;
+	color: #fff;
+	line-height: 40px;
+	font-size: 1.2rem;
+}
+
+.answer__top {
+	border-top: 1px solid #ccc;
+}
+.img {
+	border-radius: 50%;
+}
