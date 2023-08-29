@@ -101,6 +101,7 @@ const Answer = () => {
 									<img
 										className="img"
 										src="https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small/beautiful-latin-woman-avatar-character-icon-free-vector.jpg"
+										alt="pic"
 									/>
 									<h3>{item.first_name} </h3>
 								</div>

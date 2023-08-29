@@ -50,6 +50,7 @@ const Home = () => {
 									<img
 										className="img"
 										src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrIfBonwutkrU7BETKihJm8Ld5EBUUgrsIOw&usqp=CAU"
+										alt="pic"
 									/>
 									<p>{item.first_name}</p>
 								</div>
