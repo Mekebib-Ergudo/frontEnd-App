@@ -16,7 +16,7 @@ const Answer = () => {
 	const fetchQuestions = async () => {
 		try {
 			const response = await axios.get(
-				"http://localhost:3001/api/users/questionanduser"
+				`${process.env.REACT_APP_base_url}/api/users/questionanduser`
 			);
 			setQuestions(response.data.data);
 			// console.log(questions);
@@ -37,7 +37,7 @@ const Answer = () => {
 		e.preventDefault();
 		try {
 			const response = await axios.post(
-				"http://localhost:3001/api/users/answer",
+				`${process.env.REACT_APP_base_url}/api/users/answer`,
 				{ answer: addAnswer, question_id: id, user_id: userData.user.id }
 			);
 		} catch (error) {
@@ -56,7 +56,7 @@ const Answer = () => {
 	const fetchAnswer = async () => {
 		try {
 			const response = await axios.get(
-				"http://localhost:3001/api/users/allAnswer"
+				`${process.env.REACT_APP_base_url}/api/users/allAnswer`
 			);
 			// console.log(response.data.data);
 			setGetAnswer(response.data.data);

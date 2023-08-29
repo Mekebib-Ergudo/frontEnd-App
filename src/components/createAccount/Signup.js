@@ -23,7 +23,7 @@ const Signup = () => {
 		}
 		try {
 			const response = await axios.post(
-				"http://localhost:3001/api/users",
+				`${process.env.REACT_APP_base_url}/api/users`,
 				info
 			);
 			if ((response.statusText = "OK")) navigate("/login");

@@ -19,11 +19,14 @@ const Ask = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const response = await axios.post("http://localhost:3001/api/users/ask", {
-				question: question,
-				question_description: description,
-				user_id: userData.user.id,
-			});
+			const response = await axios.post(
+				`${process.env.REACT_APP_base_url}/api/users/ask`,
+				{
+					question: question,
+					question_description: description,
+					user_id: userData.user.id,
+				}
+			);
 			if (response.statusText === "OK") navigate("/");
 		} catch (error) {
 			console.error(error);

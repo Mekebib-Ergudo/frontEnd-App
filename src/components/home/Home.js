@@ -1,3 +1,4 @@
+require("dotenv").config();
 import "./Home.css";
 import React, { useEffect, useState } from "react";
 import { useGlobalContext } from "../../context";
@@ -15,7 +16,7 @@ const Home = () => {
 	const fetchQuestions = async () => {
 		try {
 			const response = await axios.get(
-				"http://localhost:3001/api/users/questionanduser"
+				`${process.env.REACT_APP_base_url}/api/users/questionanduser`
 			);
 			// console.log(response);
 			const reversedData = response.data.data.reverse();
