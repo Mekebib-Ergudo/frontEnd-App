@@ -1,16 +1,18 @@
 import "./Nav.css";
-
 import { useGlobalContext } from "../../context";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Nav = () => {
 	const [userData, setUserData] = useGlobalContext();
 	// Logout button Funcationality...
+	const navigate = useNavigate();
 	const logout = () => {
 		setUserData({
 			user: "",
 			token: "",
 		});
+		navigate("/login");
 	};
+
 	return (
 		<div className="nav">
 			<div className="nav__center">
