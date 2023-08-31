@@ -8,6 +8,7 @@ const Login = () => {
 	const [userData, setUserData] = useGlobalContext();
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
+	const [errorMsg, setErrorMsg] = useState("");
 
 	// Change input backgroud color if it empaty
 	const [errorColor, setErrorColor] = useState("#ccc");
@@ -27,6 +28,7 @@ const Login = () => {
 					password: password,
 				}
 			);
+			console.log(response);
 			if (response.data.token) {
 				setUserData({
 					user: response.data.user,
@@ -37,6 +39,8 @@ const Login = () => {
 			}
 		} catch (error) {
 			console.error(error);
+			console.log(error.response.data.msg);
+			setErrorMsg(error.response.data.msg);
 		}
 	};
 	const handleChange = (e) => {
@@ -53,6 +57,7 @@ const Login = () => {
 			<div className="login__container">
 				<div className="login__center">
 					<div className="login__title">
+						<p style={{ color: "red" }}>{errorMsg && errorMsg}</p>
 						<h3>Login to your account</h3>
 						Don't have an account?
 						<span>

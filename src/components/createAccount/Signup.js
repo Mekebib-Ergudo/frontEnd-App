@@ -7,6 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 const Signup = () => {
 	const navigate = useNavigate();
 	const [color, setColor] = useState("#ccc");
+	const [errorMsg, setErrorMsg] = useState("");
 	const [info, setInfo] = useState({
 		email: "",
 		firstName: "",
@@ -30,6 +31,7 @@ const Signup = () => {
 			console.log(response);
 		} catch (error) {
 			console.error(error);
+			setErrorMsg(error.response.data.msg);
 		}
 	};
 
@@ -47,6 +49,7 @@ const Signup = () => {
 						<span>
 							<Link to="/login">Sign in</Link>
 						</span>
+						<p style={{ color: "red" }}>{errorMsg && errorMsg}</p>
 					</div>
 					<form onSubmit={handleSubmit}>
 						<div className="login__input signup ">
