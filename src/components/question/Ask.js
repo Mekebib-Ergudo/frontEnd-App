@@ -36,11 +36,26 @@ const Ask = () => {
 	return (
 		<div className="Question">
 			<div className="question_instr">
-				<h4>Steps to write what's on your mind !</h4>
-				<li> Lorem ipsum consectetur, adipisicing elit. Nisi, ullam!</li>
-				<li>Lorem ipsum consectetur, adipisicing elit. Nisi, ullam!</li>
-				<li>Lorem ipsum consectetur, adipisicing elit. Nisi, ullam!</li>
-				<li>Lorem ipsum consectetur, adipisic</li>
+				<h4>
+					Define Your Purpose: Start by clearly defining the purpose of your
+					question. !
+				</h4>
+				<li>
+					Choose the Question Type: Questions can vary in type, such as
+					open-ended, closed-ended, multiple-choice, or opinion-based!
+				</li>
+				<li>
+					Consider Context: Provide context or background information if
+					necessary. !
+				</li>
+				<li>
+					Keep it Relevant: Ensure that your question directly relates to your
+					overall goal or research. !
+				</li>
+				<li>
+					Ask One Thing at a Time: Each question should focus on a single aspect
+					or topic.
+				</li>
 			</div>
 			<div className="question__form">
 				<div className="question__title">
