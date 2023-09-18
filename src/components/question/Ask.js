@@ -38,19 +38,19 @@ const Ask = () => {
 			<div className="question_instr">
 				<h4>
 					Define Your Purpose: Start by clearly defining the purpose of your
-					question. !
+					question.
 				</h4>
 				<li>
 					Choose the Question Type: Questions can vary in type, such as
-					open-ended, closed-ended, multiple-choice, or opinion-based!
+					open-ended, closed-ended, multiple-choice, or opinion-based
 				</li>
 				<li>
 					Consider Context: Provide context or background information if
-					necessary. !
+					necessary.
 				</li>
 				<li>
 					Keep it Relevant: Ensure that your question directly relates to your
-					overall goal or research. !
+					overall goal or research.
 				</li>
 				<li>
 					Ask One Thing at a Time: Each question should focus on a single aspect

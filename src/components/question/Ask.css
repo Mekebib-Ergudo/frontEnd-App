@@ -1,7 +1,7 @@
 .Question {
 	width: 100%;
 	margin-top: 10rem;
-	text-align: center !important;
+	text-align: start !important;
 }
 .question_instr h4 {
 	font-size: 1.5rem;
